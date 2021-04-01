@@ -12,7 +12,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class ToDoRepositoryImpl implements ToDoRepository{
 
-    private ToDoRemoteDataSource toDoRemoteDataSource;
+    private final ToDoRemoteDataSource toDoRemoteDataSource;
 
     @Inject public ToDoRepositoryImpl(ToDoRemoteDataSource toDoRemoteDataSource){
         this.toDoRemoteDataSource=toDoRemoteDataSource;
