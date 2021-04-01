@@ -1,11 +1,10 @@
 package com.raweng.poc.repository.todo;
 
-import com.raweng.poc.api.Resource;
 import com.raweng.poc.model.todo.ToDoResponse;
-
+import io.reactivex.rxjava3.core.Single;
 
 
 public interface ToDoRepository {
 
-    Resource<ToDoResponse> getToDoResponse();
+    Single<ToDoResponse> getToDoResponse();
 }
